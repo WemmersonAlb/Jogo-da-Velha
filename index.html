@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Da Velha</title>
+    <meta name="description" content="Jogo da Velha clássico! Dois jogadores batalham, mas só um pode vencer!!!">
+    <link rel="icon" href="Group 1.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script type ='module' src="index.js" defer></script>
+</head>
+
+<body>
+    <h1>Jogo da Velha!</h1>
+    <div id="x-ou-o">
+        <form action="">
+            <p>Jogador 1, qual você escolhe?</p>
+            <div id="radios">
+                <div>
+                    <input type="radio" name="escolha" id="x">
+                    <label for="x">X</label>
+                </div>
+                <div>
+                    <input type="radio" name="escolha" id="o">
+                    <label for="x">O</label>
+                </div>
+            </div>
+            <input type="button" value="Pronto!!!" id="enviar">
+        </form>
+    </div>
+    <div id='tabuleiro'>
+    </div>
+</body>
+
+</html>

@@ -18,6 +18,9 @@
     width:50px;
     height:50px;
     border:1px solid white;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.4rem;
   }
   #tabuleiro{
     width:90%;
@@ -59,11 +62,51 @@ input[type='button']{
     color:black;
     padding: 0.25rem 0.5rem;
     border-radius: 5px;
-    margin-top: 1rem;
+    margin: 1rem;
 }
 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#placar{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.placar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 1rem;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.placar>p:last-child{
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 7px;
+  color: white;
+}
+#placar>.placar:first-child>p:first-child{
+  color:#F820CA;
+}
+#placar>.placar:last-child>p:first-child{
+  color:#68F820;
+}
+#botoes{
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#mensagem{
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
 }

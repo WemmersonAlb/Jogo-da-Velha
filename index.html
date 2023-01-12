@@ -15,22 +15,38 @@
 <body>
     <h1>Jogo da Velha!</h1>
     <div id="x-ou-o">
-        <form action="">
+        <form action="" id="form-escolha">
             <p>Jogador 1, qual você escolhe?</p>
             <div id="radios">
-                <div>
+                <div class="formulario1">
                     <input type="radio" name="escolha" id="x">
                     <label for="x">X</label>
                 </div>
-                <div>
+                <div class="formulario1">
                     <input type="radio" name="escolha" id="o">
                     <label for="x">O</label>
                 </div>
             </div>
-            <input type="button" value="Pronto!!!" id="enviar">
+            <input type="button" value="Começar" id="enviar">
         </form>
     </div>
     <div id='tabuleiro'>
+    </div>
+    <div id="placar">
+        <div class="placar">
+            <p>X</p>
+            <p id="placar-x">0</p>
+        </div>
+        <div class="placar">
+            <p>O</p>
+            <p id="placar-o">0</p>
+        </div>
+        
+    </div>
+    <p id="mensagem"></p>
+    <div id="botoes">
+        <input type="button" value="Novo Jogo" id="proximo">
+        <input type="button" value="Zerar" id="zerar">
     </div>
 </body>
 
